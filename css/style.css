@@ -32,16 +32,19 @@ body {
 
 .header__uppertext-text {
     text-transform: uppercase;
-    margin-top: 15px;
-    font-size: 27px;
-    color: #fff
+    margin-top: 25px;
+    font-size: 20px;
+    color: #fff;
+    margin-left: 23px;
+    letter-spacing: 1px;
 }
 
 .header__uppertext-buttons {
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
-    margin-left: 200px;
+    margin-top: 20px;
+    margin-left: 177px;
+    margin-right: 25px;
 }
 
 .header__uppertext-buttons-login {
@@ -51,7 +54,8 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 13px;
+    margin-top: 2px;
 }
 
 .header__uppertext-buttons-signup {
@@ -62,9 +66,10 @@ body {
     background: none;
     cursor: pointer;
     border-radius: 50px;
-    width: 85px;
-    height: 30px;
-    margin-top: 20px;
+    width: 91px;
+    height: 36px;
+    margin-top: 18px;
+    margin-right: 1px;
 }
 
 .header__headliner {
@@ -75,18 +80,25 @@ body {
 
 .header__headliner-toptext {
     font-family: 'MonsterratBold';
-    font-size: 69px;
-    color:#fff;
+    font-size: 50px;
+    padding-top: 75px;
+    padding-right: 2px;
+    color: #fff;
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .header__headliner-bottomtext {
     font-family: 'Roboto';
     font-weight: lighter;
-    font-size: 32px;
+    font-size: 24px;
     color: #fff;
-    margin-top: -80px;
+    margin-top: -45px;
+}
+
+.header__headliner-button-wrapper {
+    padding-top: 10px;
 }
 
 .header__headliner-button {
@@ -99,17 +111,22 @@ body {
     border-radius: 50px;
     width: 225px;
     height: 40px;
+    font-size: 14px;
+    padding-bottom: 3px;
 }
 
 .topictext {
     text-align: center;
     font-family: 'MonsterratBold';
     color: #333333;
-    font-size: 29px;
+    font-size: 22px;
+    padding-top: 9px;
+    margin-right: 25px;
 }
 
 .stepsblock {
-    margin-top: 80px;
+    margin-top: 62px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,6 +136,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 14px;
 }
 
 .stepsblock__item-1 {
@@ -151,17 +169,22 @@ body {
 .stepsblock__item-innerwrapper {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 8px;
     position: absolute;
-    bottom: 10px;
+    bottom: 6px;;
+}
+
+.stepsblock__item-buttonwrapper {
+    padding-left: 3px;
 }
 
 .stepsblock__item-button {
-    letter-spacing: 1px;
-    font-size: 8px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-left: 14px;
     text-transform: uppercase;
     font-family: 'MonsterratRegular';
-    color:#fff;
+    color: #fff;
     border-color: #ff4e50;
     border-style: solid;
     background-color: #ff4e50;
@@ -169,14 +192,15 @@ body {
     border-radius: 50px;
     width: 70px;
     height: 20px;
+    padding-left: 8px;
 }
 
 .stepsblock__item-text-title {
     font-family: 'MonsterratBold';
     font-size: 24px;
     color: #fff;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 14px;
+    padding-bottom: 2px;
 }
 
 .stepsblock__item-text {
@@ -189,11 +213,20 @@ body {
 }
 
 .partnersblock {
-    margin-top: 40px;
+    margin-top: 64px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.parntnersblock__topictext {
+    text-align: center;
+    font-family: 'MonsterratBold';
+    color: #333333;
+    font-size: 22px;
+    padding-top: 9px;
+    margin-right: 3px;
 }
 
 .partnersblock__cardswrapper {
@@ -202,6 +235,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 840px;
+    padding-top: 11px;
 }
 
 .partnersblock__item-1 {
@@ -224,9 +258,9 @@ body {
 }
 
 .partnersblock__item-name {
-    font-size: 13px;
-    padding-top: 90px;
-    padding-left: 10px;
+    font-size: 14px;
+    padding-top: 85px;
+    padding-left: 5px;
     position: absolute;
     font-family: 'MonsterratBold';
     color: #333333;
@@ -238,9 +272,49 @@ body {
     font-family: 'Roboto';
     font-weight: lighter;
     color: #8f8f8f;
-    padding-top: 120px;
+    padding-top: 116px;
     text-align: center;
-    margin-left: -37px;
+    margin-left: -38px;
+}
+
+.partnersblock__item-name-2 {
+    font-size: 14px;
+    padding-top: 85px;
+    padding-left: 5px;
+    position: absolute;
+    font-family: 'MonsterratBold';
+    color: #333333;
+}
+
+.partnersblock__item-text-2 {
+    font-size: 14px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: lighter;
+    color: #8f8f8f;
+    padding-top: 116px;
+    text-align: center;
+    margin-left: -46px;
+}
+
+.partnersblock__item-name-3 {
+    font-size: 14px;
+    padding-top: 85px;
+    padding-left: 12px;
+    position: absolute;
+    font-family: 'MonsterratBold';
+    color: #333333;
+}
+
+.partnersblock__item-text-3 {
+    font-size: 14px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: lighter;
+    color: #8f8f8f;
+    padding-top: 116px;
+    text-align: center;
+    margin-left: -48px;
 }
 
 .partnersblock__item-2 {
@@ -309,19 +383,28 @@ body {
     cursor: pointer;
     border-radius: 50px;
     height: 40px;
-    width: 190px;
+    width: 192px;
     font-size: 14px;
 }
 
 .partnersblock__buttonwrapper {
-    padding-top: 155px;
+    padding-top: 152px;
 }
 
 .activities {
-    padding-top: 80px;
+    padding-top: 64px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.activities__topictext {
+    text-align: center;
+    font-family: 'MonsterratBold';
+    color: #333333;
+    font-size: 22px;
+    padding-top: 9px;
+    margin-right: 3px;
 }
 
 .activities__cards {
@@ -333,6 +416,7 @@ body {
     font-family: 'MonsterratBold';
     color: #fff;
     margin: 0 auto;
+    padding-top: 14px;
 }
 
 .activities__cards-firstrow {
@@ -405,21 +489,44 @@ body {
 
 .activities__cards-innertext {
     text-align: center;
-    padding-top: 150px;
+    padding-top: 139px;
+    font-size: 22px;
+}
+
+.activities__cards-innertext-sports {
+    text-align: center;
+    padding-top: 126px;
+    font-size: 22px;
 }
 
 .interests {
-    padding-top: 80px;
+    padding-top: 61px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
 
+.interests__topictext {
+    text-align: center;
+    font-family: 'MonsterratBold';
+    color: #333333;
+    font-size: 22px;
+    padding-top: 11px;
+    margin-right: 3px;
+}
+
 .interests__text {
     font-family: 'Roboto';
     font-weight: lighter;
     color: #4e4e4e;
+    font-size: 18px;
+    margin-top: 12px;
+    margin-right: 4px;
+}
+
+.interests__form {
+    padding-top: 19px;
 }
 
 .interests__form-input {
@@ -427,7 +534,7 @@ body {
     font-weight: lighter;
     color: #cccccc;
     border-color: #cccccc;
-    width: 240px;
+    width: 220px;
     height:35px;
     padding-left: 15px;
     border-radius: 5px;
@@ -445,29 +552,35 @@ body {
     border-radius: 50px;
     width: 160px;
     height: 40px;
-    margin-left: 10px;
+    margin-left: 3px;
+    font-size: 14px;
+    padding-top: 0px;
 }
 
 .footer {
     display: flex;
     flex-direction: row;
-    margin-top:80px;
+    margin-top:99px;
     margin-bottom: 20px;
     border-top: 4px solid #ff4e50;
     position: relative;
 }
 
 .footer__container {
-    width:580px;
+    margin-left: 253px;
+    width: 536px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 6px;
 }
 
 .footer__container-companytitle {
     text-transform: uppercase;
     font-family: 'MonsterratBold';
-    font-size: 24px;
+    margin-left: -5px;
+    padding-top: 11px;
+    font-size: 17px;
     color: #ff4e50;
     text-align: center;
 }
@@ -475,20 +588,34 @@ body {
 .footer__container-companyabout {
     display: flex;
     flex-direction: column;
+    padding-right: 61px;
     padding-top: 30px;
 }
 
 .footer__container-companyabout-name {
     font-family: 'MonsterratBold';
     font-size: 14px;
+    padding-left: 6px;
     color: #333333;
+    padding-top: 0px;
+    margin-bottom: 4px;
 }
 
 .footer__container-companyabout-item {
     font-family: 'Roboto';
     font-weight: lighter;
     font-size: 14px;
-    padding-top: 10px;
+    padding-left: 6px;
+    padding-top: 9px;
+    color: #8f8f8f;
+}
+
+.footer__container-companyabout-item-2 {
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 14px;
+    padding-left: 6px;
+    padding-top: 6px;
     color: #8f8f8f;
 }
 
@@ -510,10 +637,11 @@ body {
 }
 
 .footer__logo-text {
-    padding-bottom: 5px;
-    padding-left: 20px;
+    padding-bottom: 8px;
+    margin-top: -4px;
+    padding-left: 30px;
     text-transform: uppercase;
     font-family: 'MonsterratBold';
-    font-size: 10px;
+    font-size: 11px;
     color: #cccccc;
 }

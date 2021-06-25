@@ -1,0 +1,519 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto.ttf');
+}
+@font-face {
+    font-family: 'MonsterratRegular';
+    src: url('../fonts/Montserrat\ Regular.ttf');
+}
+@font-face {
+    font-family: 'MonsterratBold';
+    src: url('../fonts/MotserratBold.ttf');
+}
+body {
+    max-width: 1440px;
+    max-height: 3400px;
+    margin: 0px auto;
+}
+
+.header {
+    width:100%;
+    height:700px;
+    background: url("../img/header.png") no-repeat;
+    background-color:rgba(0,0,0,.7);
+}
+
+.header__uppertext {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    font-family: 'MonsterratBold';
+}
+
+.header__uppertext-text {
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-size: 27px;
+    color: #fff
+}
+
+.header__uppertext-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+.header__uppertext-buttons-login {
+    font-family: 'MonsterratBold';
+    color: #fff;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.header__uppertext-buttons-signup {
+    font-family: 'MonsterratBold';
+    color:#fff;
+    border-color: #fff;
+    border-style: solid;
+    background: none;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 85px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.header__headliner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__headliner-toptext {
+    font-family: 'MonsterratBold';
+    font-size: 69px;
+    color:#fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header__headliner-bottomtext {
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 32px;
+    color: #fff;
+    margin-top: -80px;
+}
+
+.header__headliner-button {
+    font-family: 'MonsterratBold';
+    color:#fff;
+    border-color: #ff4e50;
+    border-style: solid;
+    background-color: #ff4e50;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 225px;
+    height: 40px;
+}
+
+.topictext {
+    text-align: center;
+    font-family: 'MonsterratBold';
+    color: #333333;
+    font-size: 29px;
+}
+
+.stepsblock {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stepsblock__cardswrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.stepsblock__item-1 {
+    width:300px;
+    height:400px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background: url("../img/step1.jpg") no-repeat;
+    position: sticky;
+}
+
+.stepsblock__item-2 {
+    width:300px;
+    height:400px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background: url("../img/step2.jpg") no-repeat;
+    position: relative;
+}
+
+.stepsblock__item-3 {
+    width:300px;
+    height:400px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background: url("../img/step3.jpg") no-repeat;
+    position: relative;
+}
+
+.stepsblock__item-innerwrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.stepsblock__item-button {
+    letter-spacing: 1px;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-family: 'MonsterratRegular';
+    color:#fff;
+    border-color: #ff4e50;
+    border-style: solid;
+    background-color: #ff4e50;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 70px;
+    height: 20px;
+}
+
+.stepsblock__item-text-title {
+    font-family: 'MonsterratBold';
+    font-size: 24px;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.stepsblock__item-text {
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 14px;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.partnersblock {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partnersblock__cardswrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 840px;
+}
+
+.partnersblock__item-1 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50px;
+    background: url("../img/partner1.png") no-repeat;
+}
+
+.partnersblock__item-1-icon {
+    transform: translate(220%, 220%);
+    display: flex;
+    background-color: #ff4e50;
+    border-radius: 50px;
+    border: 3px solid white;
+    height: 33px;
+    width: 33px;
+    align-items: center;
+    justify-content: center;
+}
+
+.partnersblock__item-name {
+    font-size: 13px;
+    padding-top: 90px;
+    padding-left: 10px;
+    position: absolute;
+    font-family: 'MonsterratBold';
+    color: #333333;
+}
+
+.partnersblock__item-text {
+    font-size: 14px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: lighter;
+    color: #8f8f8f;
+    padding-top: 120px;
+    text-align: center;
+    margin-left: -37px;
+}
+
+.partnersblock__item-2 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50px;
+    background: url("../img/partner2.png") no-repeat;
+}
+
+.partnersblock__item-2-icon {
+    transform: translate(220%, 220%);
+    display: flex;
+    background-color: #1cd7ad;
+    border-radius: 50px;
+    border: 3px solid white;
+    height: 33px;
+    width: 33px;
+    align-items: center;
+    justify-content: center;
+}
+
+.partnersblock__item-3 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50px;
+    background: url("../img/partner3.png") no-repeat;
+}
+
+.partnersblock__item-3-icon {
+    transform: translate(220%, 220%);
+    display: flex;
+    background-color: #ffa507;
+    border-radius: 50px;
+    border: 3px solid white;
+    height: 33px;
+    width: 33px;
+    align-items: center;
+    justify-content: center;
+}
+
+.partnersblock__item-4 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50px;
+    background: url("../img/partner4.png") no-repeat;
+}
+
+.partnersblock__item-4-icon {
+    transform: translate(220%, 220%);
+    display: flex;
+    background-color: #4e73db;
+    border-radius: 50px;
+    border: 3px solid white;
+    height: 33px;
+    width: 33px;
+    align-items: center;
+    justify-content: center;
+}
+
+.partnersblock__button {
+    font-family: 'MonsterratBold';
+    color:#ff4e50;
+    border-color: #ff4e50;
+    border-style: solid;
+    background-color: none;
+    cursor: pointer;
+    border-radius: 50px;
+    height: 40px;
+    width: 190px;
+    font-size: 14px;
+}
+
+.partnersblock__buttonwrapper {
+    padding-top: 155px;
+}
+
+.activities {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.activities__cards {
+    height: 970px;
+    width: 940px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'MonsterratBold';
+    color: #fff;
+    margin: 0 auto;
+}
+
+.activities__cards-firstrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.activities__cards-firstrow-item-1 {
+    height: 310px;
+    width: 300px;
+    background: url("../img/activities_cards_firstrow_item1.png") no-repeat;
+    text-align: center;
+}
+
+.activities__cards-firstrow-item-2 {
+    height: 310px;
+    width: 300px;
+    background: url("../img/activities_cards_firstrow_item2.png") no-repeat;
+    text-align: center;
+}
+
+.activities__cards-firstrow-item-3 {
+    height: 310px;
+    width: 300px;
+    background: url("../img/activities_cards_firstrow_item3.png") no-repeat;
+    text-align: center;
+}
+
+.activities__cards-secondrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.activities__cards-secondrow-item-1 {
+    height: 310px;
+    width: 300px;
+    background: url("../img/activities_cards_secondrow_item1.png") no-repeat;
+    text-align: center;
+}
+
+.activities__cards-secondrow-item-2 {
+    height: 310px;
+    width: 620px;
+    background: url("../img/activities_cards_secondrow_item2.png") no-repeat;
+    text-align: center;
+}
+
+.activities__cards-thirdrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.activities__cards-thirdrow-item-1 {
+    height: 310px;
+    width: 620px;
+    background: url("../img/activities_cards_thirdrow_item1.png") no-repeat;
+    text-align: center;
+}
+
+.activities__cards-thirdrow-item-2 {
+    height: 310px;
+    width: 300px;
+    background: url("../img/activities_cards_thirdrow_item2.png") no-repeat;
+    text-align: center;
+    vertical-align: 50px;
+}
+
+.activities__cards-innertext {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.interests {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.interests__text {
+    font-family: 'Roboto';
+    font-weight: lighter;
+    color: #4e4e4e;
+}
+
+.interests__form-input {
+    font-family: 'Roboto';
+    font-weight: lighter;
+    color: #cccccc;
+    border-color: #cccccc;
+    width: 240px;
+    height:35px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border-style: solid;
+    font-size: 14px;
+}
+
+.interests__form-button {
+    font-family: 'MonsterratBold';
+    color:#fff;
+    border-color: #ff4e50;
+    border-style: solid;
+    background-color: #ff4e50;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 160px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin-top:80px;
+    margin-bottom: 20px;
+    border-top: 4px solid #ff4e50;
+    position: relative;
+}
+
+.footer__container {
+    width:580px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__container-companytitle {
+    text-transform: uppercase;
+    font-family: 'MonsterratBold';
+    font-size: 24px;
+    color: #ff4e50;
+    text-align: center;
+}
+
+.footer__container-companyabout {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.footer__container-companyabout-name {
+    font-family: 'MonsterratBold';
+    font-size: 14px;
+    color: #333333;
+}
+
+.footer__container-companyabout-item {
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 14px;
+    padding-top: 10px;
+    color: #8f8f8f;
+}
+
+.footer__container-partners {
+    font-family: 'MonsterratBold';
+    font-size: 14px;
+    color: #333333;
+    padding-top: 30px;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    padding-right: 250px;
+    padding-top: 40px;
+}
+
+.footer__logo-text {
+    padding-bottom: 5px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-family: 'MonsterratBold';
+    font-size: 10px;
+    color: #cccccc;
+}

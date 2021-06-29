@@ -17,8 +17,8 @@ body {
 }
 
 .header {
-    width:100%;
-    height:700px;
+    width: 100%;
+    height: 700px;
     background: url("../img/header.png") no-repeat;
     background-color:rgba(0,0,0,.7);
 }
@@ -602,6 +602,11 @@ body {
     padding-top: 30px;
 }
 
+.footer__container-companyabout-itemwrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer__container-companyabout-name {
     font-family: 'MonsterratBold';
     font-size: 14px;
@@ -656,7 +661,7 @@ body {
     color: #cccccc;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 321px) {
 
     body {
         max-width: 768px;
@@ -725,12 +730,12 @@ body {
         margin-left: 60px;
     }
 
-    .partnersblock__item-2 {
+    .partnersblock__item-3 {
         margin-left: 320px;
         margin-top: -120px;
     }
 
-    .partnersblock__item-3 {
+    .partnersblock__item-2 {
         margin-left: 62px;
         margin-top: 139px;
     }
@@ -749,6 +754,7 @@ body {
         height: 310px;
         margin-left: 10px;
         margin-right: 10px;
+        border-radius: 5px;
     }
 
     .activities__cards-firstrow-item-2 {
@@ -756,6 +762,7 @@ body {
         height: 310px;
         margin-left: 10px;
         margin-right: 10px;
+        border-radius: 5px;
     }
 
     .activities__cards-firstrow-item-3 {
@@ -764,6 +771,7 @@ body {
         margin-left: 10px;
         margin-right: 10px;
         background-position-x: -62px;
+        border-radius: 5px;
     }
 
     .activities__cards-secondrow-item-1 {
@@ -771,6 +779,7 @@ body {
         height: 310px;
         margin-left: 10px;
         margin-right: 10px;
+        border-radius: 5px;
     }
     
     .activities__cards-secondrow-item-2 {
@@ -778,6 +787,7 @@ body {
         height: 310px;
         margin-left: 10px;
         margin-right: 180px;
+        border-radius: 5px;
     }
 
     .activities__cards-thirdrow-item-1 {
@@ -786,6 +796,7 @@ body {
         margin-left: 10px;
         margin-right: 10px;
         background-position-x: -62px;
+        border-radius: 5px;
     }
 
     .activities__cards-thirdrow-item-2 {
@@ -794,6 +805,7 @@ body {
         margin-left: 10px;
         margin-right: 180px;
         background-position-x: -33px;
+        border-radius: 5px;
     }
 
     .activities__cards-innertext-2 {
@@ -821,5 +833,372 @@ body {
 
     .footer__logo {
         margin-right: -210px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body{
+        max-width: 320px;
+    }
+
+    .header {
+        height: 540px;
+        background-position: -405px;
+        background-size: cover;
+    }
+
+    .header__uppertext {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .header__uppertext-buttons {
+        margin-left: 78px;
+        margin-top: 12px;
+    }
+
+    .header__uppertext-buttons-signup {
+        margin-top: 8px;
+    }
+
+    .header__uppertext-text {
+        margin-left: 80px;
+        margin-top: 95px;
+    }
+
+    .header__headliner-toptext {
+        font-size: 29px;
+        padding-top: 0px;
+        margin-top: -20px;
+        padding-left: 3px;
+    }
+
+    .header__headliner-bottomtext {
+        padding-top: 10px;
+        font-size: 18px;
+        width: 230px;
+        word-break: break-word;
+        text-align: center;
+    }
+
+    .header__headliner-button-wrapper {
+        margin-top: -15px;
+    }
+
+    .header__headliner-button {
+        width: 280px;
+    }
+
+    .stepsblock {
+        margin-top: 3px;
+        word-break: keep-all;
+    }
+
+    .topictext {
+        margin-left: -20px;
+        width: 320px;
+        word-break: keep-all;
+    }
+    
+    .stepsblock__cardswrapper {
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
+        margin-left: -10px;
+        margin-right: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 320px;
+        height: 740px;
+        margin-top: -7px;
+    }
+
+    .stepsblock__item-1 {
+        height: 240px;
+        width: 300px;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        position:sticky;
+        
+        border-radius: 5px;
+        background: url("../img/step1mobile.png") no-repeat;
+    }
+    
+    .stepsblock__item-2 {
+        height: 240px;
+        width: 300px;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        position:sticky;
+        border-radius: 5px;
+        background: url("../img/step2mobile.png") no-repeat;
+    }
+
+    .stepsblock__item-3 {
+        height: 240px;
+        width: 300px;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        position:sticky;
+        border-radius: 5px;
+        background: url("../img/step3mobile.png") no-repeat;
+    }
+
+    .stepsblock__item-innerwrapper {
+        width: 270px;
+        padding-left: 17px;
+    }
+
+    .partnersblock {
+        margin-top: 2px;
+    }
+
+    .parntnersblock__topictext {
+        word-break: break-word;
+        width: 260px;
+        margin-left: -2px;
+    }
+
+    .partnersblock__cardswrapper {
+        padding-top: 0px;
+        margin-top: -5px;
+        flex-direction: column;
+        height: 840px;
+    }
+
+    .partnersblock__item-2 {
+        margin-top: 0px;
+        margin-bottom: -40px;
+        margin-left: -5px;
+    }
+
+    .partnersblock__item-3 {
+        margin-top: -40px;
+        margin-bottom: 0px;
+        margin-left: -5px;
+    }
+
+    .partnersblock__item-4 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: -5px;
+    }
+
+    .partnersblock__buttonwrapper {
+        padding-top: 108px;
+    }
+
+    .partnersblock__button {
+        width: 280px;
+    }
+
+    .activities__cards {
+        height: 900px;
+    }
+
+    .activities__cards-firstrow {
+        flex-direction: column;
+        height: 380px;
+    }
+
+    .activities__cards-firstrow-item-1 {
+        height: 120px;
+        width: 300px;
+        background: url("../img/mobile/Activities1.png") no-repeat;
+        text-align: center;
+    }
+
+    .activities__cards-firstrow-item-2 {
+        height: 120px;
+        width: 300px;
+        background: url("../img/mobile/Activities2.png") no-repeat;
+        text-align: center;
+    }
+
+    .activities__cards-firstrow-item-3 {
+        height: 120px;
+        width: 300px;
+        background: url("../img/mobile/Activities3.png") no-repeat;
+        text-align: center;
+    }
+
+    .activities__cards-secondrow {
+        flex-direction: column;
+        height: 250px;
+    }
+
+    .activities__cards-secondrow-item-1 {
+        height: 120px;
+        width: 300px;
+        background: url("../img/mobile/Activities4.png") no-repeat;
+        text-align: center;
+    }
+
+    .activities__cards-secondrow-item-2 {
+        height: 120px;
+        width: 300px;
+        background: url("../img/mobile/Activities5.png") no-repeat;
+        text-align: center;
+    }
+
+    .activities__cards-thirdrow {
+        flex-direction: column;
+        height: 250px;
+    }
+
+    .activities__cards-thirdrow-item-1 {
+        height: 120px;
+        width: 300px;
+        background: url("../img/mobile/Activities6.png") no-repeat;
+        text-align: center;
+    }
+
+    .activities__cards-thirdrow-item-2 {
+        height: 120px;
+        width: 300px;
+        background: url("../img/mobile/Activities7.png") no-repeat;
+        text-align: center;
+    }
+
+    .activities__topictext {
+        margin-top: -40px;
+    }
+
+    .activities__cards {
+        padding-left: 10px;
+        margin-top: -20px;
+    }
+
+    .activities__cards-innertext {
+        padding-top: 45px;
+    }
+
+    .activities__cards-innertext-sports {
+        padding-top: 30px;
+    }
+    
+    .activities__cards-innertext-2 {
+        padding-top: 45px;
+    }
+
+    .interests {
+        padding-top: 0px;
+    }
+
+    .interests__form {
+        padding-top: 0px;
+    }
+
+    .interests__text {
+        margin-top: -10px;
+    }
+
+    .interests__form-input {
+        width: 260px;
+        margin-bottom: 8px;
+        padding-left: 12px;
+    }
+
+    .interests__form-button {
+        width: 280px;
+        margin-left: -5px;
+        
+    }
+
+    .footer {
+        margin-top: 40px;
+    }
+
+    .footer__container {
+        margin-left: 0px;
+        width: 320px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    .footer__container-companytitle {
+        margin-left: -2px;
+        margin-top: -2px;
+        padding-top: 0px;
+        font-size: 17px;
+        color: #ff4e50;
+        text-align: center;
+    }
+    
+    .footer__container-companyabout {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+
+    .footer__container-companyabout-itemwrapper {
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-between;
+        width: 210px
+    }
+    
+    .footer__container-companyabout-name {
+        font-family: 'MonsterratBold';
+        font-size: 14px;
+        padding-left: 0px;
+        color: #333333;
+        padding-top: 0px;
+        margin-bottom: 0px;
+        margin-top: -6px;
+        margin-left: 70px;
+    }
+    
+    .footer__container-companyabout-item {
+        font-family: 'Roboto';
+        font-weight: lighter;
+        font-size: 14px;
+        padding-left: 6px;
+        padding-top: 5px;
+        color: #8f8f8f;
+    }
+    
+    .footer__container-companyabout-item-2 {
+        font-family: 'Roboto';
+        font-weight: lighter;
+        font-size: 14px;
+        padding-left: 0px;
+        margin-right: 5px;
+        padding-top: -5px;
+        color: #8f8f8f;
+    }
+    
+    .footer__container-partners {
+        font-family: 'MonsterratBold';
+        font-size: 14px;
+        color: #333333;
+        padding-top: 9px;
+    }
+    
+    .footer__logo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        padding-right: 106px;
+        padding-top: 0px;
+        margin-bottom: -91px;
+    }
+
+    .footer__logo-text {
+        padding-left: 0px;   
     }
 }

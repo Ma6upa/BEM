@@ -14,6 +14,8 @@ body {
     max-width: 1440px;
     max-height: 3400px;
     margin: 0px auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .header {
@@ -125,8 +127,7 @@ body {
 }
 
 .stepsblock {
-    margin-top: 62px;
-    margin-left: 20px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,8 +143,7 @@ body {
 .stepsblock__item-1 {
     width:300px;
     height:400px;
-    padding-right: 10px;
-    padding-left: 10px;
+    margin: 0 10px;
     background: url("../img/step1.jpg") no-repeat;
     position: sticky;
 }
@@ -151,8 +151,7 @@ body {
 .stepsblock__item-2 {
     width:300px;
     height:400px;
-    padding-right: 10px;
-    padding-left: 10px;
+    margin: 0 10px;
     background: url("../img/step2.jpg") no-repeat;
     position: relative;
 }
@@ -160,8 +159,7 @@ body {
 .stepsblock__item-3 {
     width:300px;
     height:400px;
-    padding-right: 10px;
-    padding-left: 10px;
+    margin: 0 10px;
     background: url("../img/step3.jpg") no-repeat;
     position: relative;
 }
@@ -398,6 +396,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 .activities__topictext {
@@ -411,23 +411,21 @@ body {
 
 .activities__cards {
     height: 970px;
-    width: 940px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-family: 'MonsterratBold';
     color: #fff;
-    margin: 0 auto;
     padding-top: 14px;
 }
 
 .activities__cards-firstrow {
     display: flex;
-    flex-direction: row;
     justify-content: space-between; 
 }
 
 .activities__cards-firstrow-item-1 {
+    margin: 0 10px;
     height: 310px;
     width: 300px;
     background: url("../img/activities_cards_firstrow_item1.png") no-repeat;
@@ -435,6 +433,7 @@ body {
 }
 
 .activities__cards-firstrow-item-2 {
+    margin: 0 10px;
     height: 310px;
     width: 300px;
     background: url("../img/activities_cards_firstrow_item2.png") no-repeat;
@@ -442,6 +441,7 @@ body {
 }
 
 .activities__cards-firstrow-item-3 {
+    margin: 0 10px;
     height: 310px;
     width: 300px;
     background: url("../img/activities_cards_firstrow_item3.png") no-repeat;
@@ -455,6 +455,7 @@ body {
 }
 
 .activities__cards-secondrow-item-1 {
+    margin: 0 10px;
     height: 310px;
     width: 300px;
     background: url("../img/activities_cards_secondrow_item1.png") no-repeat;
@@ -462,6 +463,7 @@ body {
 }
 
 .activities__cards-secondrow-item-2 {
+    margin: 0 10px;
     height: 310px;
     width: 620px;
     background: url("../img/activities_cards_secondrow_item2.png") no-repeat;
@@ -475,6 +477,7 @@ body {
 }
 
 .activities__cards-thirdrow-item-1 {
+    margin: 0 10px;
     height: 310px;
     width: 620px;
     background: url("../img/activities_cards_thirdrow_item1.png") no-repeat;
@@ -482,6 +485,7 @@ body {
 }
 
 .activities__cards-thirdrow-item-2 {
+    margin: 0 10px;
     height: 310px;
     width: 300px;
     background: url("../img/activities_cards_thirdrow_item2.png") no-repeat;
@@ -502,7 +506,6 @@ body {
 }
 
 .activities__cards-innertext-2 {
-    width: 300px;
     text-align: center;
     padding-top: 139px;
     font-size: 22px;
@@ -578,11 +581,12 @@ body {
 
 .footer__container {
     margin-left: 253px;
-    width: 536px;
+    width: 1036px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 6px;
+    position: relative;
 }
 
 .footer__container-companytitle {
@@ -645,9 +649,6 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    position: absolute;
-    right: 0;
-    padding-right: 250px;
     padding-top: 40px;
 }
 
@@ -661,12 +662,50 @@ body {
     color: #cccccc;
 }
 
+@media screen and (max-width: 950px) {
+    .partnersblock {
+        margin-top: 2px;
+    }
+
+    .parntnersblock__topictext {
+        word-break: break-word;
+        width: 260px;
+        margin-left: -2px;
+    }
+
+    .partnersblock__cardswrapper {
+        padding-top: 0px;
+        margin-top: -5px;
+        flex-direction: column;
+        height: 840px;
+        max-width: 320px;
+    }
+
+    .partnersblock__item-2 {
+        margin-top: 0px;
+        margin-bottom: -40px;
+        margin-left: -5px;
+    }
+
+    .partnersblock__item-3 {
+        margin-top: -40px;
+        margin-bottom: 0px;
+        margin-left: -5px;
+    }
+
+    .partnersblock__item-4 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: -5px;
+    }
+}
+
 @media screen and (max-width: 768px) and (min-width: 321px) {
 
     body {
         max-width: 768px;
     }
-    
+
     .header__uppertext-text {
         margin-right: 130px;
     }
@@ -721,102 +760,17 @@ body {
         width: 205px;
     }
 
-    .partnersblock__cardswrapper {
-        width: 500px;
-        display: unset;
+    .activities {
+        max-width: 768px;
     }
-
-    .partnersblock__item-1 {
-        margin-left: 60px;
-    }
-
-    .partnersblock__item-3 {
-        margin-left: 320px;
-        margin-top: -120px;
-    }
-
-    .partnersblock__item-2 {
-        margin-left: 62px;
-        margin-top: 139px;
-    }
-
-    .partnersblock__item-4 {
-       margin-left: 318px;
-       margin-top: -120px ;
-    }
-
-    .activities__cards-firstrow {
-        width: 768px;
-    }
-
-    .activities__cards-firstrow-item-1 {
-        width:235px;
-        height: 310px;
-        margin-left: 10px;
-        margin-right: 10px;
-        border-radius: 5px;
-    }
-
-    .activities__cards-firstrow-item-2 {
-        width:235px;
-        height: 310px;
-        margin-left: 10px;
-        margin-right: 10px;
-        border-radius: 5px;
-    }
-
-    .activities__cards-firstrow-item-3 {
-        width:235px;
-        height: 310px;
-        margin-left: 10px;
-        margin-right: 10px;
-        background-position-x: -62px;
-        border-radius: 5px;
-    }
-
-    .activities__cards-secondrow-item-1 {
-        width: 235px;
-        height: 310px;
-        margin-left: 10px;
-        margin-right: 10px;
-        border-radius: 5px;
-    }
-    
-    .activities__cards-secondrow-item-2 {
-        width: 490px;
-        height: 310px;
-        margin-left: 10px;
-        margin-right: 180px;
-        border-radius: 5px;
-    }
-
-    .activities__cards-thirdrow-item-1 {
-        width: 490px;
-        height: 310px;
-        margin-left: 10px;
-        margin-right: 10px;
-        background-position-x: -62px;
-        border-radius: 5px;
-    }
-
-    .activities__cards-thirdrow-item-2 {
-        width: 235px;
-        height: 310px;
-        margin-left: 10px;
-        margin-right: 180px;
-        background-position-x: -33px;
-        border-radius: 5px;
-    }
-
     .activities__cards-innertext-2 {
-        width: 150px;
         padding-left: 43px;
         margin-top: -11px;
     }
 
     .footer__container {
         margin-left: 43px;
-        width: 454px;
+        max-width: 454px;
     }
 
     .footer__container-companytitle {
@@ -826,13 +780,157 @@ body {
     .footer__container-companyabout {
         margin-right: -53px;
     }
+}
 
-    .footer__container-partners {
-       
+@media screen and (max-width: 700px) and (min-width: 320px) {
+    .stepsblock__item-innerwrapper {
+        word-break: break-all;
+        width: 100%;
+    }
+    .header__uppertext {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .header__uppertext-buttons {
+        margin: 0 10px;
+    }
+    .header__uppertext-text {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 510px) and (min-width: 320px) {
+    .partnersblock {
+        margin-top: 2px;
     }
 
+    .parntnersblock__topictext {
+        word-break: break-word;
+        width: 260px;
+        margin-left: -2px;
+    }
+
+    .partnersblock__cardswrapper {
+        padding-top: 0px;
+        margin-top: -5px;
+        flex-direction: column;
+        height: 840px;
+    }
+
+    .partnersblock__item-2 {
+        margin-top: 0px;
+        margin-bottom: -40px;
+        margin-left: -5px;
+    }
+
+    .partnersblock__item-3 {
+        margin-top: -40px;
+        margin-bottom: 0px;
+        margin-left: -5px;
+    }
+
+    .partnersblock__item-4 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: -5px;
+    }
+
+    .partnersblock__buttonwrapper {
+        padding-top: 108px;
+    }
+
+    .partnersblock__button {
+        width: 280px;
+    }
+    .footer {
+        margin-top: 40px;
+    }
+
+    .footer__container {
+        margin-left: 0px;
+        width: 320px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    .footer__container-companytitle {
+        margin-left: -2px;
+        margin-top: -2px;
+        padding-top: 0px;
+        font-size: 17px;
+        color: #ff4e50;
+        text-align: center;
+    }
+    
+    .footer__container-companyabout {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+
+    .footer__container-companyabout-itemwrapper {
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-between;
+        width: 210px
+    }
+    
+    .footer__container-companyabout-name {
+        font-family: 'MonsterratBold';
+        font-size: 14px;
+        padding-left: 0px;
+        color: #333333;
+        padding-top: 0px;
+        margin-bottom: 0px;
+        margin-top: -6px;
+        margin-left: 70px;
+    }
+    
+    .footer__container-companyabout-item {
+        font-family: 'Roboto';
+        font-weight: lighter;
+        font-size: 14px;
+        padding-left: 6px;
+        padding-top: 5px;
+        color: #8f8f8f;
+    }
+    
+    .footer__container-companyabout-item-2 {
+        font-family: 'Roboto';
+        font-weight: lighter;
+        font-size: 14px;
+        padding-left: 0px;
+        margin-right: 5px;
+        padding-top: -5px;
+        color: #8f8f8f;
+    }
+    
+    .footer__container-partners {
+        font-family: 'MonsterratBold';
+        font-size: 14px;
+        color: #333333;
+        padding-top: 9px;
+    }
+    
     .footer__logo {
-        margin-right: -210px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        padding-right: 106px;
+        padding-top: 0px;
+        margin-bottom: -91px;
+    }
+
+    .footer__logo-text {
+        padding-left: 0px;   
     }
 }
 
@@ -1191,11 +1289,9 @@ body {
         display: flex;
         flex-direction: column;
         text-align: center;
-        position: absolute;
-        bottom: 0;
-        padding-right: 106px;
-        padding-top: 0px;
-        margin-bottom: -91px;
+        position: relative;
+        margin: 0 auto;
+        padding-right: 0px
     }
 
     .footer__logo-text {
